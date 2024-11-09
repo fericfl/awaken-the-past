@@ -22,8 +22,12 @@ Global="*res://Global.gd"
 
 [dialogic]
 
-directories/dch_directory={}
-directories/dtl_directory={}
+directories/dch_directory={
+"teacher": "res://Assets/Backgrounds/teacher.dch"
+}
+directories/dtl_directory={
+"classroom": "res://Dialog/classroom.dtl"
+}
 
 [editor]
 

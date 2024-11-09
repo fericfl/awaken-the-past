@@ -3,6 +3,7 @@
 [ext_resource type="Script" path="res://menu.gd" id="1_n8p05"]
 
 [node name="Menu" type="Control"]
+texture_filter = 6
 layout_mode = 3
 anchors_preset = 8
 anchor_left = 0.5
