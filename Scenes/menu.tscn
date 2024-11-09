@@ -32,15 +32,10 @@ size_flags_horizontal = 4
 size_flags_vertical = 4
 text = "Play"
 
-[node name="Option" type="Button" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
-text = "Option"
-
 [node name="Exit" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 text = "Exit
 "
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer/Option" to="." method="_on_option_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Exit" to="." method="_on_exit_pressed"]
