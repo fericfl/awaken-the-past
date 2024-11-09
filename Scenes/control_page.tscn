@@ -26,11 +26,9 @@ scale = Vector2(3, 3)
 layout_mode = 2
 
 [node name="Label" type="Label" parent="MarginContainer/VBoxContainer"]
-texture_filter = 6
 layout_mode = 2
-text = "Colecteaza decat 12 monede pentru a castiga!"
+text = "Colecteaza decat 12 monede pentru a castigai!"
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 3.0
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

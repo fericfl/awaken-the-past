@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://uylsxfksv7br"]
+
+[ext_resource type="PackedScene" uid="uid://bi3kdm5ea65mx" path="res://Characters/pergament3.tscn" id="1_3mxpl"]
+[ext_resource type="Texture2D" uid="uid://chqt84c48l8y0" path="res://Assets/Placi/Gilgamesh3.png" id="2_scrxn"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6x3na"]
+atlas = ExtResource("2_scrxn")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_86c46"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6x3na")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Area2D" instance=ExtResource("1_3mxpl")]
+
+[node name="Sprite2D" parent="." index="0"]
+sprite_frames = SubResource("SpriteFrames_86c46")
+
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2(-1, 1)

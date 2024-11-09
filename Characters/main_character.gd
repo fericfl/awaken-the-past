@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
-const SPEED = 500.0
-const JUMP_VELOCITY = -700.0
+const SPEED = 600.0
+const JUMP_VELOCITY = -800.0
 const MAX_JUMPS = 2  # Numărul maxim de sărituri (inclusiv double jump)
 
 @onready var sprite_2d = $Sprite2D
@@ -52,17 +52,20 @@ func _physics_process(delta: float) -> void:
 	if velocity.x != 0:
 		sprite_2d.flip_h = velocity.x < 0
 
-
-func _on_pineapple_body_entered(body: Node2D) -> void:
-	pass
-
-
+	if(Global.score == 20):
+		get_tree().change_scene_to_file("res://Scenes/win.tscn")
 
 
 func _on_pineapple_collected() -> void:
 	Global.score+=1
 	print (Global.score)
-	if(Global.score == 12):
-		get_tree().change_scene_to_file("res://Scenes/win.tscn")
 
-			
+
+
+func _on_pergament3_collected() -> void:
+	Global.score+=1
+
+
+
+func _on_pergament_2_collected() -> void:
+	Global.score+=1
