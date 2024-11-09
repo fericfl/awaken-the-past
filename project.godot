@@ -24,11 +24,12 @@ Global="*res://Global.gd"
 
 directories/dch_directory={
 "Localnic": "res://Dialog/Localnic.dch",
-"teacher": "res://Assets/Backgrounds/teacher.dch"
+"teacher": "res://Dialog/teacher.dch"
 }
 directories/dtl_directory={
 "classroom": "res://Dialog/classroom.dtl",
-"mesopotamia": "res://Dialog/mesopotamia.dtl"
+"mesopotamia": "res://Dialog/mesopotamia.dtl",
+"mesopotamia_first_part": "res://Dialog/mesopotamia_first_part.dtl"
 }
 layout/style_list=[]
 layout/default_style="Default"
