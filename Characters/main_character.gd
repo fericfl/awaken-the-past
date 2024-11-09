@@ -22,6 +22,10 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("jump") and jumps_left > 0:
 		velocity.y = JUMP_VELOCITY
 		jumps_left -= 1  # Consumăm o săritură
+		
+	if Input.is_action_just_pressed("quit"):
+		get_tree().change_scene_to_file("res://Scenes/menu.tscn")
+		
 
 	# Get the input direction and handle movement/deceleration
 	var direction := Input.get_axis("left", "right")
@@ -56,6 +60,9 @@ func _on_pineapple_body_entered(body: Node2D) -> void:
 
 
 func _on_pineapple_collected() -> void:
-	print("Ananas colectat!")
 	Global.score+=1
 	print (Global.score)
+	if(Global.score == 12):
+		get_tree().change_scene_to_file("res://Scenes/win.tscn")
+
+			
