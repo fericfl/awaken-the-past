@@ -11,13 +11,14 @@ config_version=5
 [application]
 
 config/name="Awaken the Past"
-run/main_scene="res://Scenes/platformer.tscn"
+run/main_scene="res://Scenes/menu.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [autoload]
 
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
+Global="*res://Global.gd"
 
 [dialogic]
 
