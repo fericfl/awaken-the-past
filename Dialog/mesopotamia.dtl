@@ -1,0 +1,6 @@
+[background arg="res://Assets/Backgrounds/mesopotamia.jpeg" fade="0.0"]
+join Localnic center
+Localnic: Oh, hello there! You don’t look like you’re from around here. Are you lost? I could use some help.
+Localnic: I had a very special story, carved onto three clay tablets. It’s the tale of Gilgamesh, the great hero! But I’ve lost the tablets somewhere around the village. I need all three to tell the full story.
+Localnic: Could you help me find them? If you bring back all three, I’ll share the story with you—and I think it might be the key to your next journey!
+[signal arg="end_timeline"]

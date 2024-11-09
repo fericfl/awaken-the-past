@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://whcn21mfnylr"]
+[gd_scene load_steps=4 format=3 uid="uid://whcn21mfnylr"]
 
 [ext_resource type="Script" path="res://menu.gd" id="1_n8p05"]
+[ext_resource type="Texture2D" uid="uid://cpo06jgk33440" path="res://Assets/Backgrounds/Main_Menu_BG.png" id="2_fr31f"]
+[ext_resource type="Texture2D" uid="uid://c2bbwg7a4w7ds" path="res://Assets/Title.png" id="3_wrp4u"]
 
 [node name="Menu" type="Control"]
 texture_filter = 6
@@ -14,18 +16,31 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_n8p05")
 
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 2
+offset_left = -669.0
+offset_top = -383.0
+offset_right = 683.0
+offset_bottom = 409.0
+texture = ExtResource("2_fr31f")
+
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 0
 offset_left = -181.0
-offset_top = -272.0
-offset_right = -59.0
-offset_bottom = -80.0
+offset_top = -300.0
+offset_right = -61.0
+offset_bottom = -110.0
 scale = Vector2(3, 3)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
+size_flags_stretch_ratio = 0.0
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(120, 0)
+layout_mode = 2
+texture = ExtResource("3_wrp4u")
+expand_mode = 4
 
 [node name="Play" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2

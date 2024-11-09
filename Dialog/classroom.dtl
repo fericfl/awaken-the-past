@@ -1,6 +1,8 @@
 [background arg="res://Assets/Backgrounds/classroom.png" fade="0.0"]
-label Teacher (History Teacher)
+join teacher center
 teacher: Hello class!
 [background arg="res://Assets/Backgrounds/full_black_background.jpg" fade="3.0"]
+leave teacher [animation="Fade Out" length="3.0"]
 teacher: Today we are going to talk about the ancient times starting with...
+You are feeling like dozing off...
 [signal arg="end_timeline"]

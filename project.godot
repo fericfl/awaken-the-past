@@ -23,11 +23,16 @@ Global="*res://Global.gd"
 [dialogic]
 
 directories/dch_directory={
+"Localnic": "res://Dialog/Localnic.dch",
 "teacher": "res://Assets/Backgrounds/teacher.dch"
 }
 directories/dtl_directory={
-"classroom": "res://Dialog/classroom.dtl"
+"classroom": "res://Dialog/classroom.dtl",
+"mesopotamia": "res://Dialog/mesopotamia.dtl"
 }
+layout/style_list=[]
+layout/default_style="Default"
+glossary/default_case_sensitive=true
 
 [editor]
 
