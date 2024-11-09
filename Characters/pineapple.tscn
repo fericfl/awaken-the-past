@@ -1,0 +1,146 @@
+[gd_scene load_steps=21 format=3 uid="uid://v4qxgoopn1jp"]
+
+[ext_resource type="Texture2D" uid="uid://btgt68g2em28t" path="res://Assets/Fruits/Pineapple.png" id="1_m2uad"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vtrws"]
+atlas = ExtResource("1_m2uad")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_15faa"]
+atlas = ExtResource("1_m2uad")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hkvg1"]
+atlas = ExtResource("1_m2uad")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7v2dg"]
+atlas = ExtResource("1_m2uad")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y5mun"]
+atlas = ExtResource("1_m2uad")
+region = Rect2(128, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3ljlq"]
+atlas = ExtResource("1_m2uad")
+region = Rect2(160, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qw7j7"]
+atlas = ExtResource("1_m2uad")
+region = Rect2(192, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yna2h"]
+atlas = ExtResource("1_m2uad")
+region = Rect2(224, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ro0js"]
+atlas = ExtResource("1_m2uad")
+region = Rect2(256, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7424x"]
+atlas = ExtResource("1_m2uad")
+region = Rect2(288, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rewd0"]
+atlas = ExtResource("1_m2uad")
+region = Rect2(320, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7qi7l"]
+atlas = ExtResource("1_m2uad")
+region = Rect2(352, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gbgrm"]
+atlas = ExtResource("1_m2uad")
+region = Rect2(384, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pa5th"]
+atlas = ExtResource("1_m2uad")
+region = Rect2(416, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yywuv"]
+atlas = ExtResource("1_m2uad")
+region = Rect2(448, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_voatr"]
+atlas = ExtResource("1_m2uad")
+region = Rect2(480, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n7pti"]
+atlas = ExtResource("1_m2uad")
+region = Rect2(512, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5nvto"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vtrws")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_15faa")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hkvg1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7v2dg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y5mun")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3ljlq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qw7j7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yna2h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ro0js")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7424x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rewd0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7qi7l")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gbgrm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pa5th")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yywuv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_voatr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n7pti")
+}],
+"loop": true,
+"name": &"default",
+"speed": 20.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ayydt"]
+radius = 6.0
+height = 14.0
+
+[node name="Area2D" type="Area2D"]
+scale = Vector2(3, 3)
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_5nvto")
+autoplay = "default"
+frame_progress = 0.598257
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 2)
+shape = SubResource("CapsuleShape2D_ayydt")

@@ -1,7 +1,11 @@
-[gd_scene load_steps=5 format=3 uid="uid://c2fembp1k7tsr"]
+[gd_scene load_steps=9 format=3 uid="uid://c2fembp1k7tsr"]
 
 [ext_resource type="Texture2D" uid="uid://fua35t8fvq0c" path="res://Assets/Background/Brown.png" id="1_5imvt"]
 [ext_resource type="Texture2D" uid="uid://cw51frejcwohw" path="res://Assets/Tileset/Terrain (16x16).png" id="2_kdg3y"]
+[ext_resource type="PackedScene" uid="uid://bacechaxxb03e" path="res://Characters/Main_character.tscn" id="3_yaoxr"]
+[ext_resource type="Script" path="res://Characters/main_character.gd" id="4_7apmr"]
+[ext_resource type="PackedScene" uid="uid://v4qxgoopn1jp" path="res://Characters/pineapple.tscn" id="5_uleff"]
+[ext_resource type="Script" path="res://Characters/pineapple.gd" id="6_qdruo"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jqwla"]
 texture = ExtResource("2_kdg3y")
@@ -11,8 +15,11 @@ texture = ExtResource("2_kdg3y")
 3:0/0 = 0
 4:0/0 = 0
 6:0/0 = 0
+6:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 7:0/0 = 0
+7:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 8:0/0 = 0
+8:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 9:0/0 = 0
 10:0/0 = 0
 12:0/0 = 0
@@ -28,8 +35,11 @@ texture = ExtResource("2_kdg3y")
 3:1/0 = 0
 4:1/0 = 0
 6:1/0 = 0
+6:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 7:1/0 = 0
+7:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 8:1/0 = 0
+8:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 9:1/0 = 0
 10:1/0 = 0
 12:1/0 = 0
@@ -43,8 +53,11 @@ texture = ExtResource("2_kdg3y")
 1:2/0 = 0
 2:2/0 = 0
 6:2/0 = 0
+6:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 7:2/0 = 0
+7:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 8:2/0 = 0
+8:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 13:2/0 = 0
 14:2/0 = 0
 15:2/0 = 0
@@ -151,6 +164,7 @@ texture = ExtResource("2_kdg3y")
 20:10/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_olfxk"]
+physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_jqwla")
 
 [node name="Node2D" type="Node2D"]
@@ -168,5 +182,37 @@ texture = ExtResource("1_5imvt")
 stretch_mode = 1
 
 [node name="TileMap" type="TileMap" parent="."]
+scale = Vector2(3, 3)
 tile_set = SubResource("TileSet_olfxk")
 format = 2
+layer_0/tile_data = PackedInt32Array(851968, 458752, 2, 851969, 458752, 2, 851970, 458752, 2, 851971, 458752, 2, 851972, 458752, 2, 851973, 458752, 2, 851974, 458752, 2, 851975, 458752, 2, 851976, 458752, 2, 851977, 458752, 2, 851978, 458752, 2, 851979, 458752, 2, 851980, 458752, 2, 851981, 458752, 2, 851982, 458752, 2, 851983, 458752, 2, 851984, 458752, 2, 851985, 458752, 2, 851986, 458752, 2, 851987, 458752, 2, 851988, 458752, 2, 851989, 458752, 2, 851990, 458752, 2, 851991, 458752, 2, 786432, 458752, 0, 786433, 458752, 0, 786434, 458752, 0, 786435, 458752, 0, 786436, 458752, 0, 786437, 458752, 0, 786438, 458752, 0, 786439, 458752, 0, 786440, 458752, 0, 786441, 458752, 0, 786442, 458752, 0, 786443, 458752, 0, 786444, 458752, 0, 786445, 458752, 1, 786446, 458752, 1, 786447, 458752, 1, 786448, 458752, 0, 786449, 458752, 0, 786450, 458752, 0, 786451, 458752, 0, 786452, 458752, 0, 786453, 458752, 0, 786454, 458752, 0, 786455, 458752, 0, 720909, 458752, 0, 720910, 458752, 0, 720911, 458752, 0, 589828, 458752, 0, 589829, 458752, 0, 589830, 458752, 0, 589831, 458752, 0, 524304, 458752, 0, 524305, 458752, 0, 524306, 458752, 0, 524307, 458752, 0, 393224, 458752, 0, 393225, 458752, 0, 393226, 458752, 0, 393227, 458752, 0, 196610, 458752, 0, 196611, 458752, 0, 196612, 458752, 0, 196613, 458752, 0, 196614, 458752, 0, 131087, 458752, 0, 131088, 458752, 0, 131089, 458752, 0, 131090, 458752, 0, 917503, 524288, 1, 851967, 524288, 1, 786431, 524288, 1, 720895, 524288, 1, 655359, 524288, 1, 589823, 524288, 1, 524287, 524288, 1, 458751, 524288, 1, 393215, 524288, 1, 327679, 524288, 1, 262143, 524288, 1, 196607, 524288, 1, 131071, 524288, 1, 65535, 524288, 1, -1, 524288, 1, -65536, 458752, 2, -65535, 458752, 2, -65534, 458752, 2, -65533, 458752, 2, -65532, 458752, 2, -65531, 458752, 2, -65530, 458752, 2, -65529, 458752, 2, -65528, 458752, 2, -65527, 458752, 2, -65526, 458752, 2, -65525, 458752, 2, -65524, 458752, 2, -65523, 458752, 2, -65522, 458752, 2, -65521, 458752, 2, -65520, 458752, 2, -65519, 458752, 2, -65518, 458752, 2, -65517, 458752, 2, -65516, 458752, 2, -65515, 458752, 2, -65514, 458752, 2, -65513, 458752, 2, -65512, 458752, 2, 24, 393216, 1, 65560, 393216, 1, 131096, 393216, 1, 196632, 393216, 1, 262168, 393216, 1, 327704, 393216, 1, 393240, 393216, 1, 458776, 393216, 1, 524312, 393216, 1, 589848, 393216, 1, 655384, 393216, 1, 720920, 393216, 1, 786456, 393216, 1, 851992, 393216, 1)
+
+[node name="CharacterBody2D" parent="." groups=["Player"] instance=ExtResource("3_yaoxr")]
+position = Vector2(-19, -1145)
+scale = Vector2(3, 3)
+script = ExtResource("4_7apmr")
+
+[node name="Pineapple" parent="." instance=ExtResource("5_uleff")]
+position = Vector2(279, 402)
+script = ExtResource("6_qdruo")
+
+[node name="Pineapple2" parent="." instance=ExtResource("5_uleff")]
+position = Vector2(482, 249)
+script = ExtResource("6_qdruo")
+
+[node name="Pineapple3" parent="." instance=ExtResource("5_uleff")]
+position = Vector2(694, 491)
+script = ExtResource("6_qdruo")
+
+[node name="Pineapple4" parent="." instance=ExtResource("5_uleff")]
+position = Vector2(830, 344)
+script = ExtResource("6_qdruo")
+
+[connection signal="body_entered" from="Pineapple" to="Pineapple" method="_on_body_entered"]
+[connection signal="collected" from="Pineapple" to="CharacterBody2D" method="_on_pineapple_collected"]
+[connection signal="body_entered" from="Pineapple2" to="Pineapple2" method="_on_body_entered"]
+[connection signal="collected" from="Pineapple2" to="CharacterBody2D" method="_on_pineapple_collected"]
+[connection signal="body_entered" from="Pineapple3" to="Pineapple3" method="_on_body_entered"]
+[connection signal="collected" from="Pineapple3" to="CharacterBody2D" method="_on_pineapple_collected"]
+[connection signal="body_entered" from="Pineapple4" to="Pineapple4" method="_on_body_entered"]
+[connection signal="collected" from="Pineapple4" to="CharacterBody2D" method="_on_pineapple_collected"]
