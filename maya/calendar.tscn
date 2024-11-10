@@ -1,0 +1,92 @@
+[gd_scene load_steps=14 format=3 uid="uid://vdc4r2u6thp7"]
+
+[ext_resource type="Script" path="res://MainScene.gd" id="1_i1dl6"]
+[ext_resource type="Texture2D" uid="uid://dmarmrkcqvr1r" path="res://Assets/img-LZ39ofdmCIiwBBTN0hsrj.png" id="2_jvok7"]
+[ext_resource type="Script" path="res://circle_4.gd" id="2_usv6v"]
+[ext_resource type="FontFile" uid="uid://cy84viij82a6d" path="res://Assets/Bubblegum.ttf" id="3_7rv02"]
+[ext_resource type="Texture2D" uid="uid://dfav2at424wio" path="res://Assets/2.png" id="3_mewnk"]
+[ext_resource type="Script" path="res://circle_3.gd" id="4_uo12y"]
+[ext_resource type="Texture2D" uid="uid://pry78thw2ayq" path="res://Assets/3.png" id="4_vbvsu"]
+[ext_resource type="AudioStream" uid="uid://bn65031e52xuv" path="res://Assets/woosh.mp3" id="6_3lhwr"]
+[ext_resource type="Script" path="res://circle_2.gd" id="6_oeyrq"]
+[ext_resource type="Texture2D" uid="uid://0x6rt1jd22sl" path="res://Assets/1.png" id="8_5rml3"]
+[ext_resource type="Texture2D" uid="uid://da5601w4hidwf" path="res://Assets/circkeinn.png" id="10_0lv7y"]
+[ext_resource type="AudioStream" uid="uid://dtuanri01yqsa" path="res://Assets/bgmusic.mp3" id="12_55q7l"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_8vpis"]
+font = ExtResource("3_7rv02")
+font_size = 60
+
+[node name="Calendar" type="Node2D"]
+script = ExtResource("1_i1dl6")
+
+[node name="Control" type="Control" parent="."]
+custom_minimum_size = Vector2(1920, 1080)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="Control"]
+custom_minimum_size = Vector2(1920, 1080)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_jvok7")
+
+[node name="Label" type="Label" parent="."]
+offset_left = 1113.0
+offset_top = 493.0
+offset_right = 1678.0
+offset_bottom = 722.0
+label_settings = SubResource("LabelSettings_8vpis")
+
+[node name="BottomText" type="Label" parent="."]
+offset_left = 1092.0
+offset_top = 209.0
+offset_right = 1828.0
+offset_bottom = 342.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 5
+theme_override_constants/shadow_offset_y = 9
+theme_override_constants/shadow_outline_size = 21
+text = "CLICK A CIRCLE AND ALIGN 
+SUN - JAGUAR - SERPENT"
+label_settings = SubResource("LabelSettings_8vpis")
+
+[node name="Circle4" type="Sprite2D" parent="."]
+position = Vector2(572, 536)
+scale = Vector2(0.92, 0.92)
+texture = ExtResource("4_vbvsu")
+script = ExtResource("2_usv6v")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Circle4"]
+stream = ExtResource("6_3lhwr")
+
+[node name="Circle3" type="Sprite2D" parent="."]
+position = Vector2(578, 534)
+scale = Vector2(0.570258, 0.570258)
+texture = ExtResource("3_mewnk")
+script = ExtResource("4_uo12y")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Circle3"]
+stream = ExtResource("6_3lhwr")
+
+[node name="Circle2" type="Sprite2D" parent="."]
+position = Vector2(572, 534)
+scale = Vector2(0.358625, 0.358625)
+texture = ExtResource("8_5rml3")
+script = ExtResource("6_oeyrq")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Circle2"]
+stream = ExtResource("6_3lhwr")
+
+[node name="Circle1" type="Sprite2D" parent="."]
+position = Vector2(573, 529)
+scale = Vector2(0.176531, 0.176531)
+texture = ExtResource("10_0lv7y")
+
+[node name="BackgroundMusic" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("12_55q7l")
+volume_db = 6.5
+parameters/looping = true

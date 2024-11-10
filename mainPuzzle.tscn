@@ -1,0 +1,37 @@
+[gd_scene load_steps=3 format=3 uid="uid://617a5mxcbsbq"]
+
+[ext_resource type="PackedScene" uid="uid://bkopif6v1a86p" path="res://tile_map.tscn" id="1_mqo8b"]
+[ext_resource type="Texture2D" uid="uid://ptr5x7xmpykk" path="res://backgroundPuzzle.png" id="2_r30ow"]
+
+[node name="mainPuzzle" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(573, 324)
+
+[node name="TileMap" parent="." instance=ExtResource("1_mqo8b")]
+texture_filter = 1
+position = Vector2(80, 62)
+scale = Vector2(4.4, 4.4)
+layer_0/z_index = 5
+
+[node name="BackgroundPuzzle" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(562, 332)
+texture = ExtResource("2_r30ow")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="score_label" type="Label" parent="CanvasLayer"]
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -356.0
+offset_top = -54.0
+offset_bottom = 28.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 40
+text = "test"
+vertical_alignment = 1

@@ -1,0 +1,4 @@
+[style name="dialog_style"]
+Localnic (In game): Ah, you found one! That’s part of Gilgamesh’s story! Five more to go. Look around places where people gather, maybe near the well or the market. People sometimes leave things there by mistake.
+[clear time="1.0"]
+[signal arg="end_timeline"]

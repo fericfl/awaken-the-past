@@ -1,0 +1,5 @@
+[background arg="res://Assets/Backgrounds/mesopotamia.jpeg" fade="0.0"]
+[style name="dialog_style"]
+join Localnic (Default) center
+Localnic (Default): You found them all! Wonderful! Now, let’s see… This is the story of Gilgamesh, the brave king who went on an amazing adventure. Thank you so much! And I think it’s time for you to move on to the next part of your journey. Good luck, traveler! May you find more friends and stories along the way!
+[signal arg="end_timeline"]

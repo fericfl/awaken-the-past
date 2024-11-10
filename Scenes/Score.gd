@@ -2,4 +2,4 @@ extends Label
 
 
 func _process(float) -> void:
-	self.text = "SCORE: " + str(Global.score)
+	self.text = "Tablets: " + str(Global.score) + "/6"
