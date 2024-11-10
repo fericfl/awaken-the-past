@@ -1,0 +1,14 @@
+[background arg="res://Assets/img-LZ39ofdmCIiwBBTN0hsrj.png" fade="0.0"]
+join priest center
+priest: Wonderful! You've done it! The calendar is now complete and will bring great joy to our king.
+priest: (Handing over the potion) \
+\
+As thanks for your help, take this potion. It will give you strength and protection on your journey. Safe travels, young friend! 
+leave priest
+[background arg="res://Assets/Backgrounds/classroom.png" fade="0.5"]
+join teacher center
+teacher: You wake up from your small nap and hear the speaking a bit louder than before...\
+Alright class! Now that everything is clear, lightning test to check how much you paid attention!
+leave teacher
+[background arg="res://Assets/Backgrounds/full_black_background.jpg" fade="0.5"]
+The end!

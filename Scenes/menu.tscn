@@ -16,11 +16,12 @@ grow_vertical = 2
 script = ExtResource("1_n8p05")
 
 [node name="TextureRect2" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(1920, 1080)
 layout_mode = 2
-offset_left = -669.0
-offset_top = -383.0
-offset_right = 683.0
-offset_bottom = 409.0
+offset_left = -1118.0
+offset_top = -638.0
+offset_right = 1108.0
+offset_bottom = 614.0
 texture = ExtResource("2_fr31f")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]

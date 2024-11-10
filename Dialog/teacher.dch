@@ -13,7 +13,7 @@
 "display_name": "History Teacher",
 "mirror": false,
 "nicknames": [""],
-"offset": Vector2(0, 0),
+"offset": Vector2(0, 100),
 "portraits": {
 "": {
 "export_overrides": {

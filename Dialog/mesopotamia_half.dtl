@@ -1,0 +1,4 @@
+[style name="dialog_style"]
+Localnic (In game): You’re getting closer! Just three more tablets left. I wonder if it’s by the scribe’s workshop. They often copy stories there—maybe they saw it!
+[clear time="1.0"]
+[signal arg="end_timeline"]

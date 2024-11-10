@@ -1,0 +1,81 @@
+[gd_scene load_steps=13 format=3 uid="uid://bacechaxxb03e"]
+
+[ext_resource type="Texture2D" uid="uid://djdgdwjhydpaa" path="res://Assets/MalePlatform/MaleIdle1.png" id="1_q37ra"]
+[ext_resource type="Texture2D" uid="uid://c8dftbt84lmnt" path="res://Assets/MalePlatform/MaleIdle2.png" id="2_0m6hb"]
+[ext_resource type="Texture2D" uid="uid://xwp4ljdeias4" path="res://Assets/MalePlatform/MaleJump.png" id="3_3yp0w"]
+[ext_resource type="Texture2D" uid="uid://35ce6it7ewxe" path="res://Assets/MalePlatform/MaleWalk1.png" id="4_alcoi"]
+[ext_resource type="Texture2D" uid="uid://bkf0b6kxyqyr1" path="res://Assets/MalePlatform/MaleWalk2.png" id="5_tsqef"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_32qvs"]
+atlas = ExtResource("1_q37ra")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_240k6"]
+atlas = ExtResource("2_0m6hb")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7rnti"]
+atlas = ExtResource("3_3yp0w")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w8qb0"]
+atlas = ExtResource("4_alcoi")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8u1uv"]
+atlas = ExtResource("5_tsqef")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7wm1u"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"default",
+"speed": 25.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_32qvs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_240k6")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7rnti")
+}],
+"loop": true,
+"name": &"jumping",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w8qb0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8u1uv")
+}],
+"loop": true,
+"name": &"running",
+"speed": 12.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3kcs1"]
+size = Vector2(18, 40)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+scale = Vector2(0.6, 0.6)
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(32.3333, 559)
+sprite_frames = SubResource("SpriteFrames_7wm1u")
+animation = &"running"
+autoplay = "idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(33, 560)
+shape = SubResource("RectangleShape2D_3kcs1")

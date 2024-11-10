@@ -14,4 +14,4 @@ func _on_timeline_ended():
     Dialogic.timeline_ended.disconnect(_on_timeline_ended)
     
     # Change to the new scene
-    get_tree().change_scene_to_file("res://Scenes/control_page.tscn")
+    get_tree().change_scene_to_file("res://Scenes/platformer.tscn")

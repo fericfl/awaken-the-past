@@ -1,6 +1,14 @@
+[music path="res://Music/Meso_bgmusic.mp3" fade="0.0" volume="0.0"]
+[style name="dialog_style"]
 [background arg="res://Assets/Backgrounds/mesopotamia.jpeg" fade="0.0"]
 join Localnic center
 Localnic: Oh, hello there! You don’t look like you’re from around here. Are you lost? I could use some help.
 Localnic: I had a very special story, carved onto three clay tablets. It’s the tale of Gilgamesh, the great hero! But I’ve lost the tablets somewhere around the village. I need all three to tell the full story.
 Localnic: Could you help me find them? If you bring back all three, I’ll share the story with you—and I think it might be the key to your next journey!
+leave Localnic [animation="Fade Out" length="0.0"]
+[music fade="0.4" volume="0.0"]
+[background arg="res://Assets/Backgrounds/full_black_background.jpg" fade="0.0"]
+You have to collect 6 tablets to help the villager get his story back.
+Use the left and right arrow keys to move and press the Space key to jump.\
+Hint\: You can jump twice!
 [signal arg="end_timeline"]

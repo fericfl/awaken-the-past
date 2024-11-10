@@ -1,0 +1,12 @@
+[music path="res://Music/Meso_bgmusic.mp3" fade="0.0" volume="0.0"]
+[background arg="res://Assets/Backgrounds/mesopotamia.jpeg" fade="0.0"]
+[style name="dialog_style"]
+join Localnic (Default) center
+Localnic (Default): You found them all! Wonderful! Now, let’s see… This is the story of Gilgamesh, the brave king who went on an amazing adventure. Thank you so much! And I think it’s time for you to move on to the next part of your journey. Good luck, traveler! May you find more friends and stories along the way!
+leave Localnic
+[music path="res://Music/egypt_bgmusic.mp3" fade="0.0" volume="0.0"]
+[background arg="res://Assets/Backgrounds/backgroundPuzzle.png" fade="0.0"]
+join faraon center
+faraon: Ah! A new face! You look brave. My father, the great Pharaoh, has passed to the world of spirits, and I must honor him. But... I need help with something very important. Can you help me? My father’s tomb must have the right hieroglyphs, or his spirit won't rest in peace. These symbols... they're very special. They tell stories and keep us connected to the gods.
+faraon: Every stone has a hieroglyph, and each one has a meaning. We must choose wisely and match the right ones.
+[signal arg="end_timeline"]

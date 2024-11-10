@@ -1,0 +1,11 @@
+[background arg="res://Assets/Backgrounds/rome.png" fade="0.0"]
+join ceaser center
+priest: Ah, you've done it! The water will flow again, thanks to your skill.
+priest: "The people of Rome are grateful, and so am I. You’ve shown true dedication!
+leave ceaser
+[background arg="res://Assets/Backgrounds/maya.png" fade="0.0"]
+join priest center
+priest: Ah, young traveler! Just in time! The king’s birthday is near, and he needs a grand gift—a perfectly aligned Mayan calendar!
+priest: Each ring of this calendar must match the drawings with the stars, the moon, and the seasons. Only then will it be ready for the king!
+priest: Look closely and turn the circles until everything lines up just right. The sun, the jaguar, and the serpent—each symbol is important.
+[signal arg="end_timeline"]

@@ -1,0 +1,42 @@
+[music path="res://Music/egypt_bgmusic.mp3" fade="0.0" volume="0.0"]
+[background arg="res://Assets/Backgrounds/backgroundPuzzle.png" fade="0.0"]
+join faraon center
+faraon: You did it! These are the perfect hieroglyphs. My father’s spirit will be safe, thanks to you.
+faraon: (Handing over the amulet)
+faraon: Here, take this. It’s the Eye of Horus, a symbol of protection. May it watch over you on your journey, just as you have watched over my father.
+faraon: (With a smile)
+faraon: Thank you, friend. Go now, and remember the gods are with you.
+leave faraon
+[music path="res://Music/greece_bgmusic.mp3" fade="0.0" volume="0.0"]
+[background arg="res://Assets/Backgrounds/greece.png" fade="0.0"]
+[style name="dialog_style"]
+join socrate center
+socrate: Welcome, young friend! Today, let's think together about what it means to be happy and good. Now, here's my first idea\: if you want to be happy, you must be good! You see, when you understand what’s right, you’ll want to do what’s right. And when you do good things, it brings you happiness. Imagine being kind to someone—doesn’t that make you feel warm inside?
+socrate: Now, here’s something funny I like to say\: ‘I know that I know nothing!’ Sounds silly, right? But really, it means that it’s okay not to know everything. When we say, ‘I don’t know,’ we open ourselves up to learning more. So, if there’s something you don’t know, don’t be shy about it! That’s how we learn and grow.
+socrate: And finally, one more thought\: always be true to yourself, even if it’s tough. Sometimes, others might not agree with you, or they may not understand. But if you believe something is right, stand by it! I always tried to be honest about my thoughts and beliefs. It can be hard, but it’s worth it.
+socrate: Alright, wise young thinker, let’s see what you remember from our little chat!
+label Question 1
+socrate: Why did I say that being good makes you happy? Is it because it feels nice to do what’s right or just to impress others?
+- It feels nice to do what’s right
+	socrate: Exactly! Doing good lights up your heart!
+	jump Question 2
+	jump Question 3
+- I just want to impress others
+	socrate: Not quite. Real happiness comes from being kind, not just impressing others.
+	jump Question 1
+label Question 2
+socrate: What do I say when I don’t know something? Is it, ‘I know everything!’ or ‘I know that I know nothing!
+- I know everything!
+	socrate: Oh no, remember, wisdom starts by saying, ‘I don’t know!
+	jump Question 2
+- I know that I know nothing
+	socrate: Yes! Knowing we don’t know keeps us curious!
+	jump Question 3
+label Question 3
+socrate: Should you always follow what you think is right, even if others disagree? Yes or no?"
+- Yes!
+	socrate: Yes! Being true to yourself is brave!
+- No!
+	socrate: Close, but remember, being yourself—even when it’s hard—is so important.
+	jump Question 3
+[signal arg="end_timeline"]

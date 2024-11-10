@@ -1,28 +1,21 @@
-[gd_scene load_steps=15 format=3 uid="uid://vdc4r2u6thp7"]
+[gd_scene load_steps=14 format=3 uid="uid://vdc4r2u6thp7"]
 
 [ext_resource type="Script" path="res://MainScene.gd" id="1_i1dl6"]
-[ext_resource type="Texture2D" uid="uid://dmarmrkcqvr1r" path="res://img-LZ39ofdmCIiwBBTN0hsrj.png" id="2_jvok7"]
+[ext_resource type="Texture2D" uid="uid://dmarmrkcqvr1r" path="res://Assets/img-LZ39ofdmCIiwBBTN0hsrj.png" id="2_jvok7"]
 [ext_resource type="Script" path="res://circle_4.gd" id="2_usv6v"]
-[ext_resource type="FontFile" uid="uid://cy84viij82a6d" path="res://Bubblegum.ttf" id="3_7rv02"]
-[ext_resource type="Texture2D" uid="uid://dfav2at424wio" path="res://2.png" id="3_mewnk"]
+[ext_resource type="FontFile" uid="uid://cy84viij82a6d" path="res://Assets/Bubblegum.ttf" id="3_7rv02"]
+[ext_resource type="Texture2D" uid="uid://dfav2at424wio" path="res://Assets/2.png" id="3_mewnk"]
 [ext_resource type="Script" path="res://circle_3.gd" id="4_uo12y"]
-[ext_resource type="Texture2D" uid="uid://pry78thw2ayq" path="res://3.png" id="4_vbvsu"]
-[ext_resource type="AudioStream" uid="uid://bn65031e52xuv" path="res://woosh.mp3" id="6_3lhwr"]
+[ext_resource type="Texture2D" uid="uid://pry78thw2ayq" path="res://Assets/3.png" id="4_vbvsu"]
+[ext_resource type="AudioStream" uid="uid://bn65031e52xuv" path="res://Assets/woosh.mp3" id="6_3lhwr"]
 [ext_resource type="Script" path="res://circle_2.gd" id="6_oeyrq"]
-[ext_resource type="Texture2D" uid="uid://0x6rt1jd22sl" path="res://1.png" id="8_5rml3"]
-[ext_resource type="Texture2D" uid="uid://da5601w4hidwf" path="res://circkeinn.png" id="10_0lv7y"]
-[ext_resource type="AudioStream" uid="uid://dtuanri01yqsa" path="res://bgmusic.mp3" id="12_55q7l"]
+[ext_resource type="Texture2D" uid="uid://0x6rt1jd22sl" path="res://Assets/1.png" id="8_5rml3"]
+[ext_resource type="Texture2D" uid="uid://da5601w4hidwf" path="res://Assets/circkeinn.png" id="10_0lv7y"]
+[ext_resource type="AudioStream" uid="uid://dtuanri01yqsa" path="res://Assets/bgmusic.mp3" id="12_55q7l"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_8vpis"]
 font = ExtResource("3_7rv02")
 font_size = 60
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oh8ot"]
-bg_color = Color(0, 0, 0, 1)
-corner_radius_top_left = 30
-corner_radius_top_right = 30
-corner_radius_bottom_right = 30
-corner_radius_bottom_left = 30
 
 [node name="Calendar" type="Node2D"]
 script = ExtResource("1_i1dl6")
@@ -49,16 +42,16 @@ offset_bottom = 722.0
 label_settings = SubResource("LabelSettings_8vpis")
 
 [node name="BottomText" type="Label" parent="."]
-offset_left = 1102.0
-offset_top = 230.0
-offset_right = 1794.0
-offset_bottom = 363.0
+offset_left = 1092.0
+offset_top = 209.0
+offset_right = 1828.0
+offset_bottom = 342.0
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
 theme_override_constants/shadow_offset_x = 5
 theme_override_constants/shadow_offset_y = 9
 theme_override_constants/shadow_outline_size = 21
-text = "CLICK A CIRCLE AND FIND
-ABOUT MAYAN SYMBOLS"
+text = "CLICK A CIRCLE AND ALIGN 
+SUN - JAGUAR - SERPENT"
 label_settings = SubResource("LabelSettings_8vpis")
 
 [node name="Circle4" type="Sprite2D" parent="."]
@@ -92,16 +85,6 @@ stream = ExtResource("6_3lhwr")
 position = Vector2(573, 529)
 scale = Vector2(0.176531, 0.176531)
 texture = ExtResource("10_0lv7y")
-
-[node name="Button" type="Button" parent="."]
-offset_left = 1113.0
-offset_top = 668.0
-offset_right = 1483.0
-offset_bottom = 786.0
-theme_override_fonts/font = ExtResource("3_7rv02")
-theme_override_font_sizes/font_size = 30
-theme_override_styles/normal = SubResource("StyleBoxFlat_oh8ot")
-text = "I'VE LEARNED ENOUGH"
 
 [node name="BackgroundMusic" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("12_55q7l")

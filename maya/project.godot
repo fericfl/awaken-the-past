@@ -13,7 +13,7 @@ config_version=5
 config/name="Maya"
 run/main_scene="res://calendar.tscn"
 config/features=PackedStringArray("4.3", "GL Compatibility")
-config/icon="res://icon.svg"
+config/icon="res://Assets/icon.svg"
 
 [autoload]
 
